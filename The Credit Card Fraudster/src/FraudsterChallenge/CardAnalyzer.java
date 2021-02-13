@@ -48,20 +48,6 @@ public class CardAnalyzer {
         }
     }
 
-    //TODO delete this
-    private String getArrayInString() {
-        String number = "";
-        for (int i = cardNumber.length - 1; i >= 0; i--) {
-            if(cardNumber[i] != null) {
-                number += cardNumber[i].toString();
-            } else {
-                number += cardNumberMask[i].toString();
-            }
-        }
-
-        return number;
-    }
-
     private void testForMultiple() {
         long creditCardNumber = getFullNumber();
         if(creditCardNumber % 123457 == 0) {
